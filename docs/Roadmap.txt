@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<application xmlns="http://randanderson.com/application/1.0">
+	<id>air.Randtronics.Tester</id>
+	<guid>bcdd66a3-28dc-4263-9294-6283aa19ec51</guid>
+	<versionNumber>0.1</versionNumber>
+	<name>Tester</name>
+	<path>http://166.78.187.54/</path>
+	<file>NextCameraAssets.swf</file>
+	<fileAndroid>NextCameraAssets_android.swf</fileAndroid>
+	<fileIOS>NextCameraAssets_ios.swf</fileIOS>
+	<logo>myLogo</logo>
+	<splash>logo2</splash>
+	<gps>true</gps>
+	<screen>Main.xml</screen>
+</application>	
+	
+
+
+<?xml version="1.0" encoding="utf-8" ?> 
+<Screen xmlns="http://randanderson.com/application/1.0">
+	<screen>Main</screen>
+	<title>Tester</title>
+	<bg></bg>
+	<components>
+		<button>
+		</button>
+	</components>
+</Screen>
+
+
+
+Screen 
+
+
+Modules 
+GPS 
+Gyroscope 
+Vinration  
+
+Iterate - App Engine 
+
+
+Launcher 
+Main - Shell Window
+Receives Input Mouse / Screen
+Orientation handlers 
+Screen Stack Handler 
+Setup Architecture 
+	-p2p events
+	-store prefs (local db or cookiee )
+	-model/data interfaces 
+	-loaders 
+	-parsing/packager 
+	
+
+Injectors 
+	Name, Value 
+	Name, Value 	
+AppName
+AppID
+File 
+Icon  
+ScreenSaver	
+
+Apps Pool - if<1 then launch 
+    AppSQLLite SQL 
+	APpCouchBase JSON 
+	AppREST XML 
+	AutoCookiee 
+	
+	Dialog Screen 
+	    Components
+		   (text)
+				Message
+			(text)
+				Message
+			(button)
+			    cancel ->model.METHOD OR DISPATCH
+			{button}	
+				forward ->model.METHOD OR DISPATCH
+	
+	Screen Saver Screen 
+		Components  
+			{swf}
+	
+	Login Screen 
+	      Components 
+			   Icon 
+			   Image 
+			   Text 
+		      Form  
+			    label, text 
+				label, password 
+			  ACtions(buttons)  
+				Cancel  
+				Send 
+			Auto Remember/Use Check Box	
+	
+	Forget Screen 
+	      Components 
+			   Icon 
+			   Image 
+			   Text 
+		      Form  
+			  ACtions(buttons)  
+				Cancel  
+				Send 
+				
+	Signin Screen 
+	      Components 
+			   Icon 
+			   Image 
+			   Text 
+		      Form  
+			  ACtions(buttons)  
+				Cancel  
+				Send 
+	 MenuScreen  
+			Component 
+			  Screen -> App Tray
+	 
+	
+			  
+	App -> Tree 	  
+		Search Screen 
+		can create 3s
+		 Search Box
+		 prefs
+		 Lists
+		  DSN
+		    view 
+			    delete dialog 
+			delete 
+			model 
+			
+		Details Screen  
+		Form SCreen 
+
+
+
+
+Model
+Dynamic fields w/ Getters/Setters = Dictionary (Object or Array)
+DISPATCHes
+
+
+Controllers(DYnamic)
+Loaded by app to define data model driver / Input
+
+Event Reload 
+
+Clients / Commands/ Events 
+
+Form
+   Buttons Prefs 
+   DataSource and Object 
+   XML, JSON 
+   Labels
+   Fields 
+   Range/Validation 
+   Control/Data Type 
+   Binding 
+   
+   Post ACtions
+   Cancel Action 
+   
+   
+Buttons 
+
+Searchable Lists w/ DSN
+   Input Text
+   Button 
+   Lists
+   Paginate/Infinite Scroll 
+   Refresh 
+   Prefs Goto 
+    EventRefersh 
